@@ -1,0 +1,144 @@
+html {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #aad4cf;
+    margin: 0;
+}
+
+.nav {
+    width: 900px;
+    min-width: 900px;
+    margin: auto;
+    background-color: #ccebeb;
+}
+
+/* header has an image with text positioned over top and adjust the image size */
+header {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-size: 900px 300px;
+    margin: 0;
+    position: relative;
+}
+
+/* Defines the font type and font size for the text and the exact location of the text to be displayed in the banner */
+header h1 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    padding-top: 0.5em;
+    text-align: center;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+h3{
+    font-size: 1.9rem;
+    font-weight: normal;
+}
+
+#topnav {
+    width: 100%;
+    overflow: auto;
+}
+
+#topnav a {
+    width: 33.3%;
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+#topnav a:not(:last-child) {
+    border-right: 1px solid #101010;
+}
+
+#topnav a:hover {
+    color: #0000b0;
+}
+
+/** Creates the accurate space around the content and the border*/
+#content {
+    padding: 10px;
+}
+
+/* Let the star image float left to the text in a container */
+/* Defines the margin between the star image and the text around it */
+#story p img {
+    float: left;
+    width: 220px;
+    height: 220px;
+    display: block;
+    margin: 0 20px 40px 0;
+}
+
+/* There are some line spacing in the paragraph as indicated in the demo */
+#story p {
+    clear: both;
+    line-height:150%;
+}
+
+#facts ul {
+    padding-left: 1em;
+}
+
+form {
+    border: 1px solid black;
+    padding: 20px 15px 15px 15px;
+    font-size: 1.2em;
+}
+
+form label {
+    width: 100%;
+}
+
+form input[type=text] {
+    width: 100%;
+    height: 1.5em;
+    clear: both;
+    margin: 5px 0 15px 0;
+    padding: 0;
+}
+
+form textarea {
+    width: 100%;
+    clear: both;
+    margin: 5px 0 15px 0;
+    padding: 0;
+}
+
+form p {
+    margin: 5px 0 15px 0;
+}
+
+/* Include the border for the form */
+form input[type=submit] {
+    background-color: #ccebeb;
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 0.5em;
+}
+
+/* Footer with copyright text is aligned in the right part */
+footer {
+    padding: 25px 20px 20px 0;
+    text-align: right;
+}
