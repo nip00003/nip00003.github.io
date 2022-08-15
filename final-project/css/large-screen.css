@@ -1,0 +1,246 @@
+/* Give body a fixed max width and always center-align it */
+body {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+#navbar {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Change #logo, all nav links and form to float
+ * so they appear in a single row
+ */
+#logo {
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+nav li:first-child {
+    padding-left: 50px;
+}
+
+nav li {
+    margin: auto;
+    padding: 0;
+    float: left;
+
+    /* Make nav links vertical align to the center of the left logo */
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+nav li a {
+    margin: 10px;
+    padding: 0 20px;
+}
+
+#navbar form {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Change #welcome to 1200px wide */
+#welcome {
+    padding: 30px 0;
+    background-size: 1200px;
+    background-position: center;
+}
+
+/* Give translucent grey box margin in all 4 sides */
+#welcome section {
+    margin: 0 auto;
+    width: 85%;
+    height: 90%;
+}
+
+/* About us part
+ * Image and text each is 50% wide
+ */
+#about-us article {
+    margin: 0 auto;
+    width: 85%;
+}
+
+#about-us article img, #about-us article .inner {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#about-us h2, #about-us p {
+    padding: 10px;
+}
+
+#about-us p {
+    padding-bottom: 5px;
+}
+
+#services {
+    margin: 0 auto;
+    width: 85%;
+}
+
+/* Services part
+ * Use a 2-row-6-col grid layout to implement the required arrangement:
+ * 2 boxes spanning first row, 3 boxes spanning second row
+ */
+#services section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#services article h3 {
+    font-size: 200%;
+}
+
+/* Hacky: treat the section title as a grid element and give it whole row */
+#services h2 {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+}
+
+#services article:nth-child(2) {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+#services article:nth-child(3) {
+    grid-column: 4 / span 3;
+    grid-row: 2;
+}
+
+#services article:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+#services article:nth-child(5) {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+}
+
+#services article:nth-child(6) {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}
+
+/* Change buttons to be 100% wide */
+#services article a {
+    float: none;
+    text-align: center;
+}
+
+/* Vision part
+ * change to 1200px wide and give inner section left/right margin
+ */
+#vision {
+    padding: 20px 0;
+    background-size: 1200px;
+    background-position: center;
+    height: auto;
+}
+
+#vision section {
+    margin: 0 auto;
+    width: 85%;
+    height: 90%;
+}
+
+/* Team part
+ * Similar to #about-us, each image and text in an <article> is 50% wide, and is floating
+ * First staff floats to left, second staff floats to right
+ */
+#team {
+    margin: 0 auto;
+    width: 85%;
+}
+
+#team section {
+    height: 90%;
+}
+
+#team article {
+    margin-bottom: 0;
+}
+
+#team article img {
+    width: 50%;
+}
+
+#team article .inner {
+    padding: 0;
+    width: 50%;
+}
+
+#team article .inner h3,
+#team article .inner sub,
+#team article .inner p {
+    margin: 10px;
+}
+
+#team article .inner sub {
+    width: auto;
+}
+
+#team article:nth-child(2) img,
+#team article:nth-child(2) .inner {
+    float: left;
+}
+
+#team article:last-child img,
+#team article:last-child .inner {
+    float: right;
+}
+
+/* Contact us part
+ * use flexbox layout to implement the required arrangement
+ * contact form (50%) and map (50%) in first row
+ * opening hours (100%) in second row
+ */
+#contact-us {
+    margin: 0 auto;
+    width: 85%;
+}
+
+#contact-us > section {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 1%;
+}
+
+#contact-us h2 {
+    width: 100%;
+    order: 1;
+}
+
+#contact-form {
+    width: 49.5%;
+    order: 2;
+}
+
+#location {
+    width: 49.5%;
+    order: 3;
+}
+
+#location iframe {
+    height: 400px;
+}
+
+#hours {
+    width: 100%;
+    order: 4;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 85%;
+}

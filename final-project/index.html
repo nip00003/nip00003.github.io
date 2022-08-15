@@ -8,16 +8,22 @@
     <script src="https://kit.fontawesome.com/9025cea623.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">-->
+
+    <!-- CSS reset code -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <!--To Do: Add Css-->
+
+    <!-- Large screen specific CSS -->
+    <link rel="stylesheet" media="only screen and (min-width: 760px)" href="css/large-screen.css">
 </head>
 <body>
     <header>
         <!-- Header, NAV bar and welcome section -->
-        <div class="container">
-            <div class="nav">
-                <img src="images/logo.png" alt="Logo">
+        <div id="navbar">
+            <div class="clear-float">
+                <div id="logo"></div>
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -29,91 +35,86 @@
                 </nav>
                 <form action="#">
                     <input type="text" id="search-term" name="search-term" placeholder="Search">
-                    <input type="submit">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
         </div>
-        <div class="container">
-            <section id="welcome">
+        <div id="welcome">
+            <section class="clear-float">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
-                <a class="button" href="#">Connect with us</a>
-                <i class="fa-solid fa-caret-right"></i>
+                <a class="button" href="#">Connect with us<i class="fa-solid fa-caret-right"></i></a>
             </section>
         </div>
     </header>
     <main>
     <!-- Main content, each section wrapped in a <div> and consists of 1 or more <article>s -->
-        <div id="about-us" class="container">
-            <article>
+        <div id="about-us">
+            <article class="clear-float">
                 <img src="images/about-us.jpg" alt="About Us">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
-                <p>Fusce vitae faucibus sapien. Integer in orci laoreet, fermentum quam sit amet, dapibus tortor. Morbi non posuere dui. Praesent lectus velit, volutpat quis consectetur vel, vestibulum consequat est. Donec lorem elit, facilisis id faucibus consectetur, eleifend quis nisi. Maecenas dignissim metus ex, quis dictum mi lobortis sed. Fusce a pellentesque ipsum. Cras ex nisl, ornare at sodales a, bibendum in enim. Sed rutrum purus non turpis luctus condimentum. Ut fermentum arcu ut nisi tristique viverra.</p>
+                <div class="inner">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
+                    <p>Fusce vitae faucibus sapien. Integer in orci laoreet, fermentum quam sit amet, dapibus tortor. Morbi non posuere dui. Praesent lectus velit, volutpat quis consectetur vel, vestibulum consequat est. Donec lorem elit, facilisis id faucibus consectetur, eleifend quis nisi. Maecenas dignissim metus ex, quis dictum mi lobortis sed. Fusce a pellentesque ipsum. Cras ex nisl, ornare at sodales a, bibendum in enim. Sed rutrum purus non turpis luctus condimentum. Ut fermentum arcu ut nisi tristique viverra.</p>
+                </div>
             </article>
         </div>
-        <div id="services" class="container">
+        <div id="services">
             <section>
                 <h2>Our Services</h2>
                 <article>
                     <img src="images/digital.jpg" alt="Digital Transformation">
-                    <div class="inner">
+                    <div class="inner clear-float">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
-                        <a class="button" href="#">Digital Plans</a>
-                        <i class="fa-solid fa-caret-right"></i>
+                        <a class="button" href="#">Digital Plans<i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </article>
                 <article>
                     <img src="images/marketing.jpg" alt="Marketing">
-                    <div class="inner">
+                    <div class="inner clear-float">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
-                        <a class="button" href="#">Marketing Plans</a>
-                        <i class="fa-solid fa-caret-right"></i>
+                        <a class="button" href="#">Marketing Plans<i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </article>
                 <article>
                     <img src="images/video.jpg" alt="Video Production">
-                    <div class="inner">
+                    <div class="inner clear-float">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
-                        <a class="button" href="#">Video Plans</a>
-                        <i class="fa-solid fa-caret-right"></i>
+                        <a class="button" href="#">Video Plans<i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </article>
                 <article>
                     <img src="images/web.jpg" alt="Web Development">
-                    <div class="inner">
+                    <div class="inner clear-float">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
-                        <a class="button" href="#">Web Plans</a>
-                        <i class="fa-solid fa-caret-right"></i>
+                        <a class="button" href="#">Web Plans<i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </article>
                 <article>
                     <img src="images/print.jpg" alt="Print">
-                    <div class="inner">
+                    <div class="inner clear-float">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
-                        <a class="button" href="#">Print Plans</a>
-                        <i class="fa-solid fa-caret-right"></i>
+                        <a class="button" href="#">Print Plans<i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </article>
             </section>
         </div>
-        <div id="vision" class="container">
-            <section>
+        <div id="vision">
+            <section class="clear-float">
                 <h3>Our Vision</h3>
                 <p>Fusce vitae faucibus sapien. Integer in orci laoreet, fermentum quam sit amet, dapibus tortor. Morbi non posuere dui. Praesent lectus velit, volutpat quis consectetur vel, vestibulum consequat est. Donec lorem elit, facilisis id faucibus consectetur, eleifend quis nisi. Maecenas dignissim metus ex, quis dictum mi lobortis sed. Fusce a pellentesque ipsum. Cras ex nisl, ornare at sodales a, bibendum in enim. Sed rutrum purus non turpis luctus condimentum. Ut fermentum arcu ut nisi tristique viverra.</p>
-                <a class="button" href="#">Learn More</a>
-                <i class="fa-solid fa-caret-right"></i>
+                <a class="button" href="#">Learn More<i class="fa-solid fa-caret-right"></i></a>
             </section>
         </div>
-        <div id="team" class="container">
+        <div id="team">
             <section>
                 <h2>Our Team</h2>
-                <article>
+                <article class="clear-float">
                     <img src="images/john.jpg" alt="John Doe">
                     <div class="inner">
                         <h3>John Doe</h3>
@@ -121,7 +122,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum lectus sem. Duis eu pulvinar erat. Cras venenatis, lacus a convallis lobortis, augue orci bibendum nibh, vel placerat magna turpis sed magna. Ut id pellentesque magna. Curabitur viverra, lectus sit amet finibus pulvinar, orci ligula volutpat enim, ut porttitor mi diam vel arcu.</p>
                     </div>
                 </article>
-                <article>
+                <article class="clear-float">
                     <img src="images/bob.jpg" alt="Bob Rite">
                     <div class="inner">
                         <h3>Bob Rite</h3>
@@ -131,28 +132,27 @@
                 </article>
             </section>
         </div>
-        <div id="contact-us" class="container">
+        <div id="contact-us">
             <!-- Contact us, each of contact form, map view and opening hours table is wrapped in a <section> -->
             <section>
                 <h2>Contact Us</h2>
-                <section>
+                <section id="contact-form">
                     <h3>Send us a message</h3>
-                    <form action="#">
+                    <form action="#" class="clear-float">
                         <label for="full-name">Full Name</label>
                         <input type="text" id="full-name" name="full-name">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
+                        <textarea id="message" name="message" rows="6"></textarea>
                         <input type="submit" value="Send">
                     </form>
                 </section>
-                <section>
+                <section id="location">
                     <h3>Location</h3>
-                    <div id="map"></div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385726903!2d-75.75713084806384!3d45.349927778997156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z5Lqe5bSX5piG5a246Zmi!5e0!3m2!1szh-TW!2sca!4v1659443498865!5m2!1szh-TW!2sca" width="900" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
-                <section>
+                <section id="hours">
                     <h3>Hours of operation</h3>
                     <table>
                         <tr>
@@ -174,7 +174,7 @@
     </main>
     <footer>
         <!-- Footer, just 2 lines, no sections -->
-        <div class="container">
+        <div>
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="#">Unsplash</a></p>
         </div>
