@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -97,7 +98,7 @@ main {
     background-color: rgba(22, 22, 22, 0.7);
 }
 
-#welcome section h1 {
+#welcome h1 {
     padding: 15px 0;
     color: #ffffff;
     font-size: 400%;
@@ -105,25 +106,24 @@ main {
     line-height: 125%;
 }
 
-#welcome section p {
+#welcome p {
     padding: 10px 0;
     color: #ffffff;
     font-size: 75%;
     line-height: 150%;
 }
 
-#welcome section a {
+#welcome a {
     float: left;
     display: block;
     padding: 30px;
     background-color: #c78c06;
-    vertical-align: text-top;
     color: #222;
     font-size: 125%;
     text-decoration: none;
 }
 
-#welcome section i {
+#welcome i {
     padding-left: 15px;
     font-size: 125%;
 }
@@ -132,7 +132,7 @@ main {
  * Simple 100% width for everything
  */
 #about-us {
-    padding: 10px;
+    padding: 20px;
     background-color: #ffe6ac;
 }
 
@@ -175,37 +175,36 @@ main {
     font-size: 75%;
 }
 
-#services article .inner {
+#services .inner {
     padding: 10px;
 }
 
-#services article img {
+#services img {
     width: 100%;
 }
 
-#services article h3 {
+#services h3 {
     padding: 15px 0 5px;
     font-size: 300%;
     font-weight: 700;
 }
 
-#services article p {
+#services p {
     padding: 10px 0;
     line-height: 150%;
 }
 
-#services article a {
+#services a {
     float: left;
     display: block;
     padding: 20px;
     background-color: #222;
-    vertical-align: text-top;
     color: #fff;
     font-size: 125%;
     text-decoration: none;
 }
 
-#services article i {
+#services i {
     padding-left: 10px;
     font-size: 125%;
 }
@@ -216,7 +215,7 @@ main {
  * then a child <section> holds all text
  */
 #vision {
-    padding: 10px;
+    padding: 20px;
     background-image: url("../images/vision.jpg");
     background-size: 760px 507px;
     background-repeat: no-repeat;
@@ -228,32 +227,31 @@ main {
     font-size: 75%;
 }
 
-#vision section h3 {
+#vision h3 {
     padding: 20px 0;
     color: #fff;
     font-size: 333%;
     font-weight: 700;
 }
 
-#vision section p {
+#vision p {
     padding: 10px 0;
     color: #fff;
     line-height: 150%;
 }
 
-#vision section a {
+#vision a {
     float: left;
     display: block;
     border: 1px solid #c78c06;
     padding: 20px;
     background-color: rgba(22, 22, 22, 0.75);
-    vertical-align: text-top;
     color: #fff;
     font-size: 125%;
     text-decoration: none;
 }
 
-#vision section i {
+#vision i {
     padding-left: 10px;
     font-size: 125%;
 }
@@ -278,21 +276,21 @@ main {
     font-size: 75%;
 }
 
-#team article .inner {
+#team .inner {
     padding: 10px;
 }
 
-#team article img {
+#team img {
     width: 100%;
 }
 
-#team article h3 {
+#team h3 {
     padding: 15px 0 5px;
     font-size: 300%;
     font-weight: 700;
 }
 
-#team article sub {
+#team sub {
     display: block;
     width: 100%;
     padding-bottom: 2px;
@@ -301,25 +299,9 @@ main {
     font-weight: 700;
 }
 
-#team article p {
+#team p {
     padding: 10px 0;
     line-height: 150%;
-}
-
-#team article a {
-    float: left;
-    display: block;
-    padding: 20px;
-    background-color: #222;
-    vertical-align: text-top;
-    color: #fff;
-    font-size: 125%;
-    text-decoration: none;
-}
-
-#team article i {
-    padding-left: 10px;
-    font-size: 125%;
 }
 
 /* Contact us part
@@ -341,7 +323,7 @@ main {
     font-weight: 700;
 }
 
-#contact-us section {
+#contact-us section section {
     font-size: 75%;
 }
 
